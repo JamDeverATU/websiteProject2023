@@ -76,6 +76,7 @@ body {
 	font-family: Arial, sans-serif;
 	font-size: 16px;
 	text-align: center;
+  font-family: verdana, arial, sans-serif; 
 }
 
 .container {
@@ -395,4 +396,8 @@ input[type=submit]:hover {
 .back-btn a {
   color: #fff;
   text-decoration: none;
+}
+
+p {
+  padding: 10px;
 }
