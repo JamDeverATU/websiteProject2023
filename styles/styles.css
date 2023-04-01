@@ -316,3 +316,29 @@ p2 {
 p {
   padding: 10px;
 }
+
+.two-columns {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+/* Style the unordered list */
+ul {
+  list-style-type: disc; /* Display a disc bullet */
+  margin-left: 20px; /* Add some left margin */
+}
+
+/* Style the ordered list */
+ol {
+  list-style-type: decimal; /* Display a decimal number */
+  margin-left: 20px; /* Add some left margin */
+}
+
+/* Style the list items */
+li {
+  margin-bottom: 5px; /* Add some bottom margin */
+}
