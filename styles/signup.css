@@ -1,81 +1,12 @@
-* {box-sizing: border-box}
-
-/* Full-width input fields */
-  input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
-button:hover {
-  opacity:1;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #000000;
-  color: white;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
-
-/* Add padding to container elements */
-.container {
-  padding: 16px;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-    width: 100%;
-  }
-}
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 body {
 	background-color: #fff;
 	color: #000;
-  font-family: verdana, arial, sans-serif;
+	font-family: Arial, sans-serif;
 	font-size: 16px;
 	text-align: center;
+  font-family: verdana, arial, sans-serif;
 }
 
 .container {
@@ -116,7 +47,7 @@ p {
 	}
 }
 
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 header {
   background-color: #ffffff;
@@ -133,7 +64,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  font-family: verdana, arial, sans-serif;
 }
 
 .logo {
@@ -156,7 +86,7 @@ nav {
 }
 
 .nav-links li a {
-  font-family: verdana, arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #000000;
   text-decoration: none;
   font-size: 16px;
@@ -166,7 +96,6 @@ nav {
   transition: background-color 0.3s ease-in-out;
 }
 
-
 .nav-links li a:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -175,103 +104,7 @@ nav {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 80px;
-    background-color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-  }
 
-  .nav-links li {
-    opacity: 0;
-  }
-
-  .burger {
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-  }
-}
-
-.nav-active {
-  transform: translateX(0%);
-}
-
-.line1, .line2, .line3 {
-  width: 30px;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.burger.animate .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.burger.animate .line2 {
-  opacity: 0;
-}
-
-.burger.animate .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
-
-.slideshow-container {
-  max-width: 9000px;
-  position: relative;
-  margin: auto;
-}
-
-.mySlides {
-  display: none;
-}
-
-.mySlides img {
-  width: 100%;
-}
-
-.dots-container {
-  text-align: center;
-}
-
-.dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.dot.active {
-  background-color: #717171;
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 .grid-container {
   display: grid;
@@ -399,6 +232,94 @@ input[type=submit]:hover {
   text-decoration: none;
 }
 
+
 p {
   padding: 10px;
+}
+
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+}
+
+
+
+
+
+
+
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #ffffff;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ffffff;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #746f6f;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #000000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #ffffff;
+  color: black;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
 }
