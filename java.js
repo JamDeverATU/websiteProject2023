@@ -50,3 +50,27 @@ function autoSlides() {
 }
 
 setTimeout(autoSlides, 5000); // Start slideshow automatically
+
+
+const form = document.getElementById('contact-form');
+const nameInput = document.getElementById('fname');
+const emailInput = document.getElementById('lname');
+const messageInput = document.getElementById('subject');
+const errorElement = document.getElementById('error');
+
+form.addEventListener('submit', (e) => {
+  let messages = [];
+  if (nameInput.value === '' || nameInput.value == null) {
+    messages.push('Name is required');
+  }
+  if (emailInput.value === '' || emailInput.value == null) {
+    messages.push('Email is required');
+  }
+  if (messageInput.value === '' || messageInput.value == null) {
+    messages.push('Message is required');
+  }
+  if (messages.length > 0) {
+    e.preventDefault();
+    errorElement.innerText = messages.join(', ');
+  }
+});
