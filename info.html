@@ -1,15 +1,18 @@
+<!-- This is an HTML document. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- This section defines the document's metadata. -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infomation page</title>
+    <title>Home Page</title>
+    <!-- This section specifies the document's external resources. -->
     <link rel="icon" type="logo" href="img/logo.png">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">  
 </head>
-
 <body>
+    <!-- This is the document's header section. -->
     <header>
         <nav>
           <div class="logo">
@@ -23,11 +26,6 @@
           </ul>
           <div class="navbar-cart">
             <a href=""><img src="img/shopping-cart.png"></a>
-          </div>
-          <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
           </div>
         </nav>
       </header>
@@ -88,14 +86,17 @@
         </body>
       </html>
 
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <h4>About Us</h4>
-              <p> we are an online clothing store specializing in trendy and affordable clothing for women, men and children.</p>
-              <p>&copy; 2023 My Company. All rights reserved.</p>
-            </div>
+<!--
+This is a sample HTML code for a footer section of a website.
+-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>About Us</h4>
+        <p>We are an online clothing store specializing in trendy and affordable clothing for women, men and children.</p>
+        <p>&copy; 2023 My Company. All rights reserved.</p>
+      </div>
             <img src="img/logo.png" alt="Your Logo" class="logo-1">
             <div class="col-md-4">
               <footer class="footer-nav">
@@ -111,8 +112,25 @@
             </div>
           </div>
         </div>
-      </footer>
-
-<script src="java.js"></script>
-</body>
-</html>
+          <!-- Google Map embedded using JavaScript -->
+          <div id="googleMap" style="width:600;height:200;"></div>
+          <script>
+            function myMap() {
+              var mapProp= {
+                center:new google.maps.LatLng(51.508742,-0.120850),
+                zoom:5,
+              };
+              var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+    <!-- Google Map embedded using iframe -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2329.401578942382!2d-8.461323!3d54.2791632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485ee84ef3fb4b37%3A0xc76b5b21d985fb79!2sAtlantic%20Technological%20University%20Sligo!5e0!3m2!1sen!2sie!4v1680201212014!5m2!1sen!2sie" width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </footer>
+  <!-- Included JavaScript file -->
+  <script src="java.js"></script>
+  </body>
+  </html>
+  
