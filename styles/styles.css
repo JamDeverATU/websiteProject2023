@@ -342,3 +342,24 @@ ol {
 li {
   margin-bottom: 5px; /* Add some bottom margin */
 }
+
+.footer-nav {
+  color: #fff;
+  padding: 50px;
+}
+
+.footer-nav nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+
+.footer-nav nav a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
